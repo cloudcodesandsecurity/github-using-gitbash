@@ -1,0 +1,48 @@
+GITHUB USING GITBASH COMMAND
+	Make sure you have gitbash installed
+	cd /c/              ## Change your directory to where you want to keep your repositories
+	mkdir gitrepos
+	mkdir cloudcodesandsecurity
+	mkdir pythoncodes                                                              ##The different Repositories
+	git init
+
+## Sign up on github
+	github.com
+
+## Make sure your directory isn’t empty
+	git config --global user.name “@kayolafarms”         ## --global means for all the repositories
+	git config --global user.email “joseph.olagabriel@gmail.com”
+	git status
+
+## If you see untracked files type:     
+	git add .
+
+## If you see Changes to be committed, type:     
+	git commit -m "first commit"
+
+## Get the link for push in your github repository, be mindful of the https and ssh links:
+	git remote add origin https://github.com/cloudcodesandsecurity/pythoncodes.git
+
+	 
+	Cat .git/config                               ## To check the remote repository path
+	git branch -M main		## Changes your branch name from master to main
+### Connection fully established
+
+	git push -u origin main
+
+	### If it is giving you access denied it means you copied ssh link instead of https, do the following:      
+	rm –rf  .git/config
+	git push -u origin main
+
+### Use your Github login detail to continue with browser at the prompt
+
+###Use these link to get the followup commands
+https://dzone.com/articles/top-20-git-commands-with-examples
+
+                            
+
+
+
+
+
+
